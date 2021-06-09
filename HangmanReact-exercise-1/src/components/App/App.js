@@ -22,13 +22,13 @@ const isGameOver = (game, wrongLetters, wordWasGuessed) =>
   wordWasGuessed || wrongLetters.length >= game.maxGuesses;
 
 const App = (props) => {
-  // const game = props.game;
-  // const wordWasGuessed = wordGuessed(game.chosenWord, game.guessedLetters);
-  // const wrongLetters = getWrongLetters(game.chosenWord, game.guessedLetters);
-  // const gameIsOver = isGameOver(game, wrongLetters, wordWasGuessed);
+  const game = props.game;
+  const wordWasGuessed = wordGuessed(game.chosenWord, game.guessedLetters);
+  const wrongLetters = getWrongLetters(game.chosenWord, game.guessedLetters);
+  const gameIsOver = isGameOver(game, wrongLetters, wordWasGuessed);
 
   const gameOver = gameIsOver ? (
-    <GameOver chosenWord={game.chosenWord} wordGuessed={wordWasGuessed} />
+    <GameOver chosenWord={game.chosenWord} wordGuesed={wordWasGuessed} />
   ) : null;
 
   return (

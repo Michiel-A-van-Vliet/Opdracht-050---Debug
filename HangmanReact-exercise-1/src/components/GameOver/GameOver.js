@@ -3,10 +3,10 @@ import React from "react";
 // import lose from "../../assets/lose.gif";
 
 const GameOver = (props) => {
-  console.log("* GameOver");
-  console.log("- props:", props);
-  console.log("- chosenWord:", props.chosenWord);
-  console.log("- wordGuessed:", props.wordGuessed);
+  // console.log("* GameOver");
+  // console.log("- props:", props);
+  // console.log("- chosenWord:", props.chosenWord);
+  // console.log("- wordGuessed:", props.wordGuessed);
   const winResult = (
     <div className="win">
       <h2>You won!</h2>
